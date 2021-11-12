@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: #FFF;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -200px;
+  margin-left: -200px;
+  z-index: 2;
+  mix-blend-mode: color-dodge;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+#canv {
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  -webkit-transform: translate(-50%, -50);
+          transform: translate(-50%, -50);
+  z-index: 1;
+  -webkit-filter: contrast(1) invert(1);
+          filter: contrast(1) invert(1);
+}
